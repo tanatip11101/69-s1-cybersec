@@ -1,0 +1,34 @@
+# API
+
+### Login
+POST http://localhost:9091/admin/login
+Content-Type: application/json
+
+{
+    "email": "",
+    "password": "",
+    "rememberMe": false
+}
+
+### Forgot
+POST http://localhost:9091/admin/forgot-password
+Content-Type: application/json
+
+{
+    "email": ""
+}
+
+### Profile
+GET http://localhost:9091/admin/users/me
+Authorization: Bearer
+
+### Register / signup
+GET http://localhost:9091/admin/signup
+Content-Type: application/json
+
+{
+    "email": "",
+    "password": "",
+    "firstName": "",
+    "lastName": ""
+}
