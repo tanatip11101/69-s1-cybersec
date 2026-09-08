@@ -1,0 +1,68 @@
+# API
+
+### Login
+POST http://localhost:9091/admin/login
+Content-Type: application/json
+
+{
+    "email": "tanatip-a@rmutp.ac.th",
+    "password": "0630295353!pond",
+    "rememberMe": false
+}
+
+### Forgot
+POST http://localhost:9091/admin/forgot-password
+Content-Type: application/json
+
+{
+    "email": "tanatip-a@rmutp.ac.th"
+}
+
+### Profile
+GET http://localhost:9091/admin/users/me
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzg3NzA4NzYxLCJleHAiOjE3OTAzMDA3NjF9.bpvLLLy0VnovZhOgzztRx36WE9ZKO8gDLca1p3NSK8U
+
+### Register / signup
+POST http://localhost:9091/admin/register-admin
+Content-Type: application/json
+
+{
+    "email": "tanatip-a@rmutp.ac.th",
+    "password": "0630295353!pond",
+    "firstName": "tanatip",
+    "lastName": "aiamongart"
+}
+
+## User
+
+### Login
+POST http://localhost:9091/api/auth/local
+Content-Type: application/json
+
+{
+    "identifier": "tanatip-a@rmutp.ac.th",
+    "password": "0630295353!pond"
+}
+
+### Forgot
+POST http://localhost:9091/api/auth/forgot-password
+Content-Type: application/json
+
+{
+    "email": "tanatip-a@rmutp.ac.th"
+}
+
+### Profile
+GET http://localhost:9091/api/users/me
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzg4MjU0ODg0LCJleHAiOjE3OTA4NDY4ODR9.il7KqL3l3nfYveetEhqdvrDzbmqzbcJaiwjLafw0lX8
+
+### Register / Signup
+POST http://localhost:9091/api/auth/local/register
+Content-Type: application/json
+
+{
+    "username": "tanatip",
+    "email": "tanatip-a@rmutp.ac.th",
+    "password": "0630295353!pond"
+}
+localhost
